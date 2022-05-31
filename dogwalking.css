@@ -1,0 +1,40 @@
+body {
+    background: url("/Images/field.jpeg");
+    background-size: cover;
+    overflow: hidden;
+  }
+  
+  #dog {
+    position: absolute;
+    bottom: 50px;
+    background: url("/Images/dog.png");
+    width: 380px;
+    height: 185px;
+    animation: walking-animation 0.70s steps(2) infinite,
+      walk_forward 25s linear infinite;
+  }
+  
+  /* #street {
+    position: relative;
+    top: 300px;
+    border-bottom: 5px groove green;
+  } */
+  
+  @keyframes walking-animation {
+    0% {
+      background-position: 0px;
+    }
+    100% {
+      background-position: 870px;
+    }
+  }
+  
+  @keyframes walk_forward {
+    0% {
+      transform: translateX(-100px);
+    }
+    100% {
+      transform: translateX(100vw);
+    }
+  }
+  
