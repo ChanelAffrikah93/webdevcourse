@@ -1,0 +1,41 @@
+body {
+    background: url("/images/spongebob\ background.webp");
+    background-size: cover;
+    overflow: hidden;
+  }
+  
+
+  #spongebob {
+    position:absolute;
+    right: initial;
+    bottom: 1px;
+    background: url("/images/spongebob\ pants.png");
+    width: 250px;
+    height: 301px;
+    animation: walking-animation 9s steps(16) infinite
+    
+
+
+    /* animation: walking-animation 2s steps(16) infinite,
+      walk_forward 1s linear infinite; */
+  }
+  
+  
+   @keyframes walking-animation {
+    0% {
+      background-position: 1000000px;
+    }
+    100% {
+      background-position: 10000px;
+    }
+  } 
+
+
+  @keyframes walk_backwards {
+    0% {
+      transform: translateX(-100px);
+    }
+    100% {
+      transform: translateX(100vh);
+    }
+  }
